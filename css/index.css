@@ -641,11 +641,13 @@
         .box4 ul li p a{
             display: block;
             width: 240px;
-            height: 70px;
-            /*white-space: nowrap;*/
-            word-wrap: normal;
-            text-overflow: ellipsis;
-            overflow: hidden;
+            height: 64px;
+            overflow:hidden;
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp:3;
+
+        text-overflow: ellipsis;
         }
         .box4 ul li img{
             width: 297px;
